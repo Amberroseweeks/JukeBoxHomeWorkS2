@@ -1,4 +1,4 @@
-
+//constructor function to build the data set
 function SongTrack(title, artist, source) {
     this.title = title
     this.artist = artist
@@ -13,21 +13,14 @@ let SongTrack3 = new SongTrack('Inspirational Outlook', 'Artist 3: Scott Holmes'
 
 let songList = [SongTrack1, SongTrack2, SongTrack3]
 
-
+//checked the location of data
 //console.log(SongTrack.length)
 //console.log(songList.length)
 //console.log(SongTrack4.source)
 //console.log(SongTrack4.title)
 
-
-var songName = document.getElementById("songName");
-
 var song = new Audio();
 var currentSong = 0; 
-//let playbutton = document.getElementById("playbutton");
-
-
-
 
     function playSong () { 
         song.src = songList[currentSong].source;
@@ -72,7 +65,6 @@ function shuffleSong() {
     let shuffle = undefined;
     do{
         shuffle = Math.floor(Math.random()* songList.length)
-//        console.log(' shuffle ' + shuffle)
     }
     while (currentSong == shuffle)
     currentSong = shuffle  
@@ -90,42 +82,8 @@ function Jukebox (songTrack) {
     
     
 }
-
+//check location of data
 console.log(SongTrack)
 console.log(song)
 console.log(song.src)
 
-//function playSong(){
-//    
-//    song.src = songs[currentSong];
-//    
-//    songName.textContent = SongTrack[i].title[currentSong];
-//    
-//    song.play();
-//}
-//
-//console.log(songName)
-//function pauseSong(){
-//    song.src = songs[currentSong];
-//    
-//    songName.textContent = songs[currentSong];
-//    
-//    song.pause();
-//}
-//
-//function next(){
-//    
-//    currentSong++;
-//    if(currentSong >2){
-//        currentSong = 0;
-//    }
-//    playSong();
-//}
-//
-//function pre(){
-//    currentSong--;
-//    if(currentSong < 0){
-//        currentSong= 2;
-//    }
-//    playSong();
-//}
