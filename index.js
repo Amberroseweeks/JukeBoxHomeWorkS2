@@ -1,18 +1,4 @@
 
-
-// Create a music box. The design is completely up to you;
-// The app should be able to:
-//  - play audio files; CHECK
-//  - pause audio files; CHECK
-//  - has next/previous buttons; CHECK
-//  - has randomization (when selected it randomizes the song order); NO
-//  - able to load audio files; ??
-// Please make sure that the app looks as good as possible in terms of design. This is your protfolio
-// and all aspects of the app (not only the js logic) is very important;
-// Start the project gradually - first figure out how to work with audio in javascript. Once you get the play and
-// pause buttons proceed with the rest; Leave the design and css until the end.
-
-
 function SongTrack(title, artist, source) {
     this.title = title
     this.artist = artist
