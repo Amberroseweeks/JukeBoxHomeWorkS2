@@ -1,3 +1,4 @@
+
 // Homework:
 // Create a music box. The design is completely up to you;
 // The app should be able to:
@@ -10,7 +11,6 @@
 // and all aspects of the app (not only the js logic) is very important;
 // Start the project gradually - first figure out how to work with audio in javascript. Once you get the play and
 // pause buttons proceed with the rest; Leave the design and css until the end
-
 
 
 function SongTrack(title, artist, source) {
@@ -27,7 +27,7 @@ let SongTrack3 = new SongTrack('Inspirational Outlook', 'Scott Holmes', 'https:/
 
 let songList = [SongTrack1, SongTrack2, SongTrack3]
 
-
+//checked the location of data
 //console.log(SongTrack.length)
 //console.log(songList.length)
 //console.log(SongTrack4.source)
@@ -35,10 +35,6 @@ let songList = [SongTrack1, SongTrack2, SongTrack3]
 
 var song = new Audio();
 var currentSong = 0; 
-//let playbutton = document.getElementById("playbutton");
-
-
-
 
     function playSong () { 
         song.src = songList[currentSong].source;
@@ -83,7 +79,6 @@ function shuffleSong() {
     let shuffle = undefined;
     do{
         shuffle = Math.floor(Math.random()* songList.length)
-
     }
     while (currentSong == shuffle)
     currentSong = shuffle  
@@ -101,7 +96,8 @@ function Jukebox (songTrack) {
     
     
 }
-
+//check location of data
 console.log(SongTrack)
 console.log(song)
 console.log(song.src)
+
